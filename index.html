@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Zakun Hotel & Suites - A luxury hotel in Ikom, Cross River, Nigeria offering top-tier services including spa, wellness, luxury rooms, and fine dining.">
+    <meta name="keywords" content="Best hotels in Ikom, luxury hotel, Ikom hotel, Zakun Hotel, hotels in Cross River, Nigeria hotels, luxury suites, spa and wellness">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags (for social media sharing) -->
+    <meta property="og:title" content="Zakun Hotel & Suites - Luxury Hotel in Ikom">
+    <meta property="og:description" content="Discover the best hotel experience at Zakun Hotel & Suites in Ikom. Enjoy luxurious accommodations, world-class spa services, and gourmet dining.">
+    <meta property="og:image" content="path_to_image.jpg"> <!-- Replace with your image path -->
+    <meta property="og:url" content="https://www.yourhotelwebsite.com"> <!-- Replace with your website URL -->
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zakun Hotel & Suites - Luxury Hotel in Ikom">
+    <meta name="twitter:description" content="Book your stay at Zakun Hotel & Suites, offering luxury rooms, fine dining, and spa services in Ikom, Cross River, Nigeria.">
+    <meta name="twitter:image" content="path_to_image.jpg"> <!-- Replace with your image path -->
+
+    <!-- Title Tag -->
+    <title>Luxury Hotel - Zakun Hotel & Suites | Best Hotel in Ikom</title>
+    
+    <!-- External Stylesheet and Google Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Maps API (add your API key here later) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAP_API_KEY&callback=initMap" async defer></script>
+
+    <style>
+        /* Make sure the body fits the whole viewport */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Flexbox Layout for Contact and Map */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .contact-left {
+            width: 48%; /* Make the form take up less space */
+        }
+
+        .contact-right {
+            width: 48%; /* Make the map take up the same space */
+        }
+
+        /* Ensure the map takes up full width and height */
+        #googleMap {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Ensure everything is contained within the page */
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav>
+            <div class="nav-header">
+                <h1 class="logo">
+                    <img src="./image/p2.jpg" alt="Logo" width="30px">
+                </h1>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Background Slideshow -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Welcome to Zakun Hotel & Suites</h1>
+                <p>Your dream vacation awaits. Experience comfort like never before.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="serve">Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <img src="./image/g.webp" alt="Service 1">
+                    <h3>Luxury Rooms</h3>
+                    <p>Enjoy our spacious and elegantly designed rooms, equipped with the finest amenities.</p>
+                </div>
+                <div class="card">
+                    <img src="./image/k.webp" alt="Service 2" width="20px">
+                    <h3>Spa & Wellness</h3>
+                    <p>Relax and rejuvenate in our state-of-the-art spa facilities with world-class treatments.</p>
+                </div>
+                <div class="card">
+                    <img src="./image/p.webp" alt="Service 3">
+                    <h3>Fine Dining</h3>
+                    <p>Indulge in exquisite dining experiences with a variety of cuisines prepared by top chefs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are zakun hotel located in the heart of Ikom, Cross River, Nigeria. We pride ourselves on offering a world-class experience that blends modern comfort with traditional hospitality.</p>
+            <p>Our guests enjoy unparalleled services and amenities, ensuring every stay is memorable. From business trips to family vacations, we cater to all needs with excellence and care.</p>
+            <div class="gallery">
+                <img src="./image/d4.avif" alt="About 1">
+                <img src="./image/d5.avif" alt="About 2">
+                <img src="./image/d6.avif" alt="About 3">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section with Form and Map -->
+     <div id="contact">
+    <div id="contact-container">
+        <form action="https://formspree.io/f/manwkjbo" method="POST" class="contact-left">
+            <div id="contact-left-title">
+                <h2>Contact Us</h2> 
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+       
+        <div class="map-container">
+            <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509441!2d-122.41941548468189!3d37.77492927975912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dfdd7e0f%3A0xefe8d3c1b0efea4f!2sYour+Restaurant!5e0!3m2!1sen!2sus!4v1608231138747!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <h3>About Our Hotel</h3>
+                <p>Zakun Hotel is committed to offering an unforgettable experience to our guests, with top-tier services and an exclusive environment. Our facilities include business lounges, event spaces, and leisure areas to ensure every guest’s satisfaction.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <p>Email: info@luxuryhotel.com</p>
+                <p>Phone: +234 123 456 789</p>
+                <p>Address: Ikom, Cross River, Nigeria</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Zakun Hotel. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
