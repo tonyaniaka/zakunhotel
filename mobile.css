@@ -46,15 +46,18 @@ html, body {
 
 /* Hamburger Menu */
 .hamburger {
-    display: flex;
+    display: flex; /* Show hamburger menu */
     flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 18px;
+    gap: 5px;
+    background: none;
+    border: none;
     cursor: pointer;
-    z-index: 1001;
-    margin-left: auto; /* Push it to the right */
+    position: fixed; /* Make it fixed at the top-right corner */
+    top: 10px; /* Adjust vertical positioning */
+    right: 10px; /* Adjust horizontal positioning */
+    z-index: 1001; /* Ensure it appears above other elements */
 }
+
 
 .hamburger span {
     display: block;
