@@ -19,32 +19,38 @@ body {
 
 .nav-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .logo img {
     display: block;
+    width: 70px;
+    padding-top: 10px;
 }
 
 /* Show nav-links by default on desktop */
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    letter-spacing: normal; /* Reset letter-spacing */
+    padding-left: 750px;/* Push the list to the right */
     align-items: center;
     list-style: none;
-    gap: 20px;
+    gap: 20px; /* Add spacing between list items */
     transition: height 0.3s ease;
     z-index: 999;
 }
 
+
 .nav-links li a {
+    letter-spacing: normal; /* Use normal spacing for text */
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 500;
+    padding: 20px;
     transition: color 0.3s ease;
 }
+
 
 .nav-links li a:hover {
     color: #d9534f;
@@ -54,12 +60,13 @@ body {
 @media (max-width: 768px) {
     .nav-links {
         display: none; /* Hide nav links by default on mobile */
+        border-radius: 20px;
         flex-direction: column;
         position: fixed;
         top: 40px;
         right: 0;
         background-color: rgba(49, 33, 53, 0.9);
-        width: 200px;
+        width: 20px;
         height: 0;
         overflow: hidden;
         padding: 0;
@@ -424,11 +431,4 @@ body {
     border-radius: 8px; /* Optional: Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
 }
-
-}
-
-
-
-
-
 
